@@ -2,7 +2,7 @@
 #include <vector>
 class Solution {
 public:
-    std::vector<int> twoSum(std::vector<int>& nums, int target) {
+    static std::vector<int> twoSum(std::vector<int>& nums, int target) {
         std::unordered_map<int, int> map;
         const int INTENTION_BUCKET_SIZE = 10000;
         map.bucket_size(INTENTION_BUCKET_SIZE);
